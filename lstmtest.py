@@ -262,7 +262,7 @@ def run_epoch(session, model, eval_op=None, verbose=False):
     return np.exp(costs / iters)  # 返回perplexity作为函数结果
 
 
-raw_data = reader.ptb_raw_data('data/')  # 直接读取解压后的数据
+raw_data = reader.ptb_raw_data('data/')  # 直接读取的数据
 train_data, valid_data, test_data, _ = raw_data  # 得到训练数据，验证数据和测试数据
 
 config = SmallConfig()  # 定义训练模型的配置为SmallConfig
